@@ -1,76 +1,55 @@
 % Compile with xelatex specimen.tex
 \documentclass{article}
+\usepackage[landscape,a4paper]{geometry}%
 \usepackage[silent]{fontspec}
 \setmainfont[Scale=1,Ligatures=Required]{Chaucer.otf}
-\usepackage{kantlipsum}
-\title{Chaucer font}
+\usepackage{multicol}
+\usepackage{xcolor}
+\definecolor{sidered}{RGB}{185, 59, 21}
+\title{Chaucer typeface}
 \author{epilys}
 \begin{document}
 \maketitle
 This font is based on William Morris' Chaucer type used in the Kelmscott Chaucer edition.
-
-\section{Sample text}
-
-\subsection{\textsection{}\thinspace{}THE KNIGHT'S TALE}
-\begin{verse}
-WHILOM, as olde stories tellen us,\\
-There was a duke that highte Theseus.\\
-Of Athens he was lord and governor,\\
+\section*{Sample text}%
+\reversemarginpar{}%
+\marginpar{\textcolor{sidered}{\\ \\ The\\ Knyghtes\\ Tale}}%
+\begin{multicols}{2}%
+\noindent{\LARGE{}W}HILOM, as olde stories tellen us,\\
+Ther was a duc that highte Theseus;\\
+Of Atthenes he was lord and governour,\\
 And in his time such a conqueror\\
 That greater was there none under the sun.\\
 Full many a riche country had he won.\\
 What with his wisdom and his chivalry,\\
 He conquer'd all the regne of Feminie,\\
-That whilom was y-cleped Scythia;\\
-And weddede the Queen Hippolyta\\
-And brought her home with him to his country\\
-With muchel glory and great solemnity,\\
-And eke her younge sister Emily,\\
-And thus with vict'ry and with melody\\
-Let I this worthy Duke to Athens ride,\\
-And all his host, in armes him beside.
-\end{verse}
+That whilom was ycleped Scythia;\\
+And weddede the queene Ypolita,\\
+And broghte hire hoom with hym in his contree,\\
+With muchel glorie and greet solemnytee,\\
+And eek her younge sister Emelye.\\
+And thus with victorie and with melodye\\
+Let I this worthy Duc to Atthenes ryde,\\
+And al his hoost, in armes hym bisyde.
+\columnbreak%
 
-\begin{verse}
-\textpilcrow{}\thinspace{}And certes, if it n'ere too long to hear,\\
-I would have told you fully the mannere,\\
-How wonnen was the regne of Feminie,\\
-By Theseus, and by his chivalry;\\
-And of the greate battle for the nonce\\
-Betwixt Athenes and the Amazons;\\
-And how assieged was Hippolyta,\\
-The faire hardy queen of Scythia;\\
-And of the feast that was at her wedding\\
-And of the tempest at her homecoming.\\
-But all these things I must as now forbear.\\
-I have, God wot, a large field to ear\\
-And weake be the oxen in my plough;\\
-The remnant of my tale is long enow.\\
-I will not letten eke none of this rout.\\
-Let every fellow tell his tale about,\\
-And let see now who shall the supper win.\\
-There as I left, I will again begin.
-\end{verse}
-
-\begin{verse}
-\textpilcrow{}\thinspace{}This Duke, of whom I make mentioun,\\
-When he was come almost unto the town,\\
-In all his weal, and in his moste pride,\\
-He was ware, as he cast his eye aside,\\
-Where that there kneeled in the highe way\\
-A company of ladies, tway and tway,\\
-Each after other, clad in clothes black:\\
-But such a cry and such a woe they make,\\
-That in this world n'is creature living,\\
-That hearde such another waimenting\\
-And of this crying would they never stenten,\\
-Till they the reines of his bridle henten.\\
-"What folk be ye that at mine homecoming\\
-Perturben so my feaste with crying?"\\
-Quoth Theseus; "Have ye so great envy\\
-Of mine honour, that thus complain and cry?\\
-Or who hath you misboden, or offended?\\
-Do telle me, if it may be amended;\\
-And why that ye be clad thus all in black?"
-\end{verse}
+\noindent\textpilcrow{}\thinspace{}And certes, if it nere to long to heere,\\
+I wolde have toold yow fully the manere,\\
+How wonnen was the regne of Feminye,\\
+By Theseus, and by his chivalrye;\\
+And of the grete bataille for the nonce\\
+Betwixen Atthenes and Amazones;\\
+And how asseged was Ypolita,\\
+The faire hardy queene of Scithia;\\
+And of the feast that was at hir weddynge,\\
+And of the tempest at hir hoom comynge;\\
+But al that thyng I moot as now forbere.\\
+I have, God woot, a large feeld to ere,\\
+And wayke been the oxen in my plough.\\
+The remenant of the tale is long ynough.\\
+I wol nat letten eek noon of this route;\\
+Lat every felawe telle his tale aboute,\\
+And lat se now who shal the soper wynne,\\
+And ther I lefte, I wol ageyne bigynne.
+\end{multicols}%
 \end{document}
